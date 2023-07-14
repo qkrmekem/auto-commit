@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+# algorithm
+### 코드업 기초 100제
+### 그리디
+### 탐색
+### 기초 동적프로그래밍
+=======
 # auto-commit
 
 🌳 Making green your Github stats, powered by [Github Actions](https://github.com/features/actions)
@@ -43,3 +50,4 @@ Or just do in the manual way:
 
 © 2020 Crafted by Irfan Maulana
 
+>>>>>>> 61581d8168efc1704104b9930d674c001a69cc76
