@@ -83,9 +83,15 @@ public class AutoCommitExample {
             boolean hasChanges = statusReader.lines().count() > 0;
 
             if (hasChanges) {
+                // 변경된 파일 추가
+                processBuilder.command(gitPath, "-C", directoryPath.toString(), "add", changedFile.toString());
+                process = processBuilder.start();
+                process.waitFor();
 
                 // 커밋 메시지와 함께 커밋 수행
                 processBuilder.command(gitPath, "-C", directoryPath.toString(), "commit", "-m", "자동 커밋");
+                process = processBuilder.start();
+                process.waitFor();
 
                 // 현재 작업 중인 로컬 브랜치 확인
                 Process branchProcess = new ProcessBuilder(gitPath, "-C", directoryPath.toString(), "rev-parse", "--abbrev-ref", "HEAD").start();

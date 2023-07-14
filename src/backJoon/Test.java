@@ -7,5 +7,8 @@ public class Test {
         System.out.println((int)Math.sqrt(30));
         // auto commit test
         // testtesetestsettst
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 }
