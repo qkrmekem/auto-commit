@@ -8,11 +8,5 @@ public class Test {
         // auto commit test
         // testtesetestsettst
         System.out.println("test");
-        System.out.println("test");
-        System.out.println("test");
-        System.out.println("test");
-        System.out.println("test");
-        System.out.println("test");
-        System.out.println("test");
     }
 }
